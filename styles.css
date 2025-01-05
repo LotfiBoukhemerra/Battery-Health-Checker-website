@@ -431,3 +431,143 @@ footer {
         padding: 1rem 2rem;
     }
 }
+
+/* Add smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Enhance hero section */
+.hero-content h1 {
+    background: linear-gradient(
+        120deg,
+        var(--primary-color),
+        var(--vs-code-blue)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Add floating animation to hero image */
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.hero-image {
+    animation: float 6s ease-in-out infinite;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+}
+
+/* Enhance download button */
+.download-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-color);
+}
+
+.download-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(
+        45deg,
+        rgba(76, 175, 80, 0.1),
+        rgba(0, 152, 255, 0.1)
+    );
+    transform: translate(-50%, -50%) rotate(45deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% {
+        transform: translate(-50%, -50%) rotate(45deg) translateY(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(45deg) translateY(100%);
+    }
+}
+
+/* Add hover effects to navigation links */
+.footer-section a {
+    position: relative;
+}
+
+.footer-section a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.footer-section a:hover::after {
+    width: 100%;
+}
+
+/* Enhance mobile responsiveness */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .feature {
+        transform: none !important;
+        margin: 1rem 0;
+    }
+
+    .download-btn {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+}
+
+/* Add loading animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content,
+.feature {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Enhance feature cards */
+.feature {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}

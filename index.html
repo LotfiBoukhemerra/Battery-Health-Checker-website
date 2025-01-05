@@ -9,6 +9,12 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         />
+        <link rel="preload" href="styles.css" as="style" />
+        <link rel="preload" href="./icon.png" as="image" />
+        <meta
+            name="description"
+            content="Monitor and optimize your laptop's battery life with Battery Health Checker"
+        />
     </head>
     <body class="dark-theme">
         <nav>
@@ -54,6 +60,8 @@
                     <img
                         src="./Screenshot.png"
                         alt="Battery Health Checker Screenshot"
+                        loading="lazy"
+                        decoding="async"
                     />
                 </div>
             </div>
