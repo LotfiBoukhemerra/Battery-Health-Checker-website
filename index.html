@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Battery Health Checker</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+    </head>
+    <body class="dark-theme">
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="./icon.png" alt="Battery Health Checker Icon" />
+                    <span>Battery Health Checker</span>
+                </div>
+                <div class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Battery Health Checker</h1>
+                    <p class="description">
+                        Check your battery's health status with one click
+                    </p>
+                    <a
+                        href="./Battery-Health-Checker V 0.5b.zip"
+                        class="download-btn"
+                        >Download Now</a
+                    >
+                    <div class="version-info">
+                        <p>Version 0.5b</p>
+                        <div class="sha-container">
+                            <code id="sha256"
+                                >6065c12e8cfccdc1812e27e5d136ffd78a5b72c2a0591568676986d9bdffa9a0</code
+                            >
+                            <button
+                                class="copy-btn"
+                                onclick="copyToClipboard()"
+                            >
+                                Copy SHA256
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img
+                        src="./Screenshot.png"
+                        alt="Battery Health Checker Screenshot"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2>About Battery Health Checker</h2>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-battery-full"></i>
+                        <h3>Easy checking of status</h3>
+                        <p>check your battery's health status with one click</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Detailed Analytics</h3>
+                        <p>
+                            Get comprehensive reports about your battery's
+                            performance and health
+                        </p>
+                    </div>
+                    <!-- <div class="feature">
+                        <i class="fas fa-bell"></i>
+                        <h3>Smart Alerts</h3>
+                        <p>
+                            Receive notifications when your battery needs
+                            attention
+                        </p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Battery Health Checker</h4>
+                        <p>© 2024 All rights reserved</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Links</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li>
+                                <a href="#" target="_blank">Documentation</a>
+                            </li>
+                            <li><a href="#" target="_blank">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
