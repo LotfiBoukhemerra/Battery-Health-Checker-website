@@ -68,4 +68,4 @@ All releases are signed and include SHA-256 hashes for verification. Always veri
 
 ---
 
-<!-- Made with ❤️ by [Your Name/Organization] -->
+Made with ❤️ by [Your Name/Organization]

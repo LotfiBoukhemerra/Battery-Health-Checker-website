@@ -3,18 +3,74 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-MT651YR33N"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-MT651YR33N");
+        </script>
+        <link rel="icon" type="image/png" href="./icon.png" />
+        <!-- or for .ico -->
+        <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+        <!-- or for SVG -->
+        <!-- <link
+            rel="icon"
+            type="image/svg+xml"
+            href="path-to-your-icon/favicon.svg"
+        /> -->
+        <meta
+            name="description"
+            content="Monitor and optimize your laptop's battery life with Battery Health Checker"
+        />
+        <meta
+            name="keywords"
+            content="battery, health, checker, monitor, optimize, laptop, life"
+        />
+        <meta name="author" content="Eldev" />
+        <meta property="og:title" content="Battery Health Checker" />
+        <meta
+            property="og:description"
+            content="Monitor and optimize your laptop's battery life with Battery Health Checker"
+        />
+        <meta property="og:image" content="./Screenshot.png" />
+        <meta property="og:url" content="https://batterychecker.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Battery Health Checker" />
+        <meta property="og:locale" content="en_US" />
         <title>Battery Health Checker</title>
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="./styles.css" />
         <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
         />
-        <link rel="preload" href="styles.css" as="style" />
+        <!-- <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        /> -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preload" href="./styles.css" as="style" />
         <link rel="preload" href="./icon.png" as="image" />
         <meta
             name="description"
             content="Monitor and optimize your laptop's battery life with Battery Health Checker"
         />
+        <meta property="og:title" content="Battery Health Checker" />
+        <meta
+            property="og:description"
+            content="Monitor and optimize your laptop's battery life with Battery Health Checker"
+        />
+        <meta property="og:image" content="./Screenshot.png" />
+        <meta property="og:url" content="https://batteryhealthchecker.com" />
     </head>
     <body class="dark-theme">
         <nav>
@@ -24,7 +80,7 @@
                     <span>Battery Health Checker</span>
                 </div>
                 <div class="theme-toggle">
-                    <i class="fas fa-sun"></i>
+                    <i class="bi bi-brightness-high-fill"></i>
                 </div>
             </div>
         </nav>
@@ -36,16 +92,14 @@
                     <p class="description">
                         Check your battery's health status with one click
                     </p>
-                    <a
-                        href="./Battery-Health-Checker V 0.5b.zip"
-                        class="download-btn"
+                    <a href="./BatteryHealthChecker.zip" class="download-btn"
                         >Download Now</a
                     >
                     <div class="version-info">
                         <p>Version 0.5b</p>
                         <div class="sha-container">
                             <code id="sha256"
-                                >6065c12e8cfccdc1812e27e5d136ffd78a5b72c2a0591568676986d9bdffa9a0</code
+                                >18b60a531965fcb8d29c36f3ee86cd5b5c9c0315da5875822a7f65e131d70dd3</code
                             >
                             <button
                                 class="copy-btn"
@@ -72,26 +126,23 @@
                 <h2>About Battery Health Checker</h2>
                 <div class="features">
                     <div class="feature">
-                        <i class="fas fa-battery-full"></i>
+                        <i class="bi bi-battery"></i>
                         <h3>Easy checking of status</h3>
-                        <p>check your battery's health status with one click</p>
+                        <p>Check your battery's health with one click</p>
                     </div>
                     <div class="feature">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>Detailed Analytics</h3>
+                        <i class="bi bi-speedometer2"></i>
+                        <h3>Get instant status</h3>
                         <p>
-                            Get comprehensive reports about your battery's
-                            performance and health
+                            Get instant status of your battery's health and
+                            performance
                         </p>
                     </div>
                     <!-- <div class="feature">
-                        <i class="fas fa-bell"></i>
-                        <h3>Smart Alerts</h3>
-                        <p>
-                            Receive notifications when your battery needs
-                            attention
-                        </p>
-                    </div> -->
+                    <i class="fas fa-bell"></i>
+                    <h3>Smart Alerts</h3>
+                    <p>Receive notifications when your battery needs attention</p>
+                </div> -->
                 </div>
             </div>
         </section>
@@ -101,16 +152,28 @@
                 <div class="footer-content">
                     <div class="footer-section">
                         <h4>Battery Health Checker</h4>
-                        <p>© 2024 All rights reserved</p>
+                        <p>© 2024 All rights reserved eldev</p>
                     </div>
                     <div class="footer-section">
-                        <h4>Links</h4>
+                        <h4>Support us</h4>
                         <ul>
-                            <li><a href="#about">About</a></li>
+                            <!-- <li><a href="#about">About</a></li> -->
                             <li>
-                                <a href="#" target="_blank">Documentation</a>
+                                <a
+                                    href="https://www.paypal.com/paypalme/LotfiBoukhemerra"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >Paypal</a
+                                >
                             </li>
-                            <li><a href="#" target="_blank">Support</a></li>
+                            <li>
+                                <a
+                                    href="buymeacoffee.com/eldev"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >Buymeacoffee</a
+                                >
+                            </li>
                         </ul>
                     </div>
                 </div>
